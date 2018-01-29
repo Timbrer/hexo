@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.2" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.2" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.0.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Timbrer">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Timbrer">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Timbrer">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+  <title>Timbrer</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Timbrer</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/11/mips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shuhong Huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Timbrer">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/11/mips/" itemprop="url">MIPS快速指南</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-11T23:22:45+08:00">2017-10-11</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要总结自<a href="http://logos.cs.uic.edu/366/notes/MIPS%20Quick%20Tutorial.htm" target="_blank" rel="noopener">MPIS Quick Turotial</a>，本文内容会随着学习的深入补充。</p>
+<h3 id="数据类型与表示"><a href="#数据类型与表示" class="headerlink" title="数据类型与表示"></a>数据类型与表示</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- MIPS指令都为32位<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 一个字节(byte)8位，半字(halfword)16位，字(word)32位<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 字符类型需要一个字节，整数类型需要四个字节<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 字符用单引号括起，字符串用双引号括起</p>
+<h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 共有32个通用寄存器<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 指令里使用寄存器要在前面加$<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用寄存器可以用编号也可以用名字 e.g. $0, $t1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 专用寄存器lo和hi不能直接寻址，只有特殊的指令可以访问<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 栈是从高地址到低地址<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通用寄存器具体内容和命名这里不再赘述，最基本的寄存器有$v0寄存器用来存储输入输出等指令，$a0-$a3寄存器多用做$v0所存操作的参数，$s0-$s7寄存器用来存值(类似全局变量)，$t0-$t9用来存临时值(类似局部变量)。</p>
+<h3 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 程序是以.asm或.s结尾的文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 数据段以.data独占一行开始，第二行开始声明变量<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 数据段中声明的变量都存储在内存里<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 代码段以.text独占一行开始<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 代码段中可以有多个标签(类似c中的函数头)，程序从标签<strong>mian:</strong>开始执行<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 程序在main中执行exit的syscall后结束<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>#</strong>是注释符号，类似c中的<strong>//</strong>，没有多行引用</p>
+<pre><code>e.g. hello world
+
+.text
+main:
+    la $a0 str   # 将str的地址加载到$a0寄存器中
+    li $v0 4     # 将$v0寄存器加载4号指令，4号指令的参数为$a0中的值
+    syscall       # 执行$v0中的指令
+
+    li $v0 10     # 将$v0寄存器加载10号指令
+    syscall       # 执行$v0中的指令
+.data
+    str: .asciiz &quot;hello world\n&quot;
+</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面我们开始讲解基本的指令</p>
+<h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 变量声明的格式为:  <strong>name:    storage_type    value</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 声明的存储类型有.word .byte .space，分别是字，字节和连续空间(类似数组)</p>
+<pre><code>e.g.
+
+var1:       .word   3         # 一个值为3的整数变量
+array1:     .byte   &apos;a&apos;,&apos;b&apos;   # 一个含有两个字符的数组
+array2:     .space  40        # 一个40字节长的空白区域，可以当作长度为40的字符数组也可以当作长度为10的整数数组
+</code></pre><h3 id="加载存储指令"><a href="#加载存储指令" class="headerlink" title="加载存储指令"></a>加载存储指令</h3><h4 id="load："><a href="#load：" class="headerlink" title="load："></a>load：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lw(lb)指令  <strong>lw(lb) register_destination, RAM_source</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将内存中的数据加载到寄存器中，lw(load word)拷贝四个字节，lb(load byte)拷贝一个字节</p>
+<h4 id="store："><a href="#store：" class="headerlink" title="store："></a>store：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sw(sb)指令  <strong>sw(sb) register_source, RAM_destination</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将寄存器中的数据存储到内存中，sw(store word)存储四个字节，lb(store byte)存储一个字节</p>
+<h4 id="load-immediate："><a href="#load-immediate：" class="headerlink" title="load immediate："></a>load immediate：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- li指令  <strong>li register_destination, value</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将立即数value存储到寄存器中</p>
+<pre><code>e.g.
+
+.data
+    var1: .word 1
+    char1: .byte &apos;a&apos;
+.text
+    lw $t0, var1   # 将整数var1加载到$t0寄存器
+    lb $t1, char1  # 将字符char1加载到$t1寄存器
+    li $t2, 5      # 将5存储到寄存器$t2中
+    sw $t2, var1   # 将$t2寄存器中的值赋给var1
+</code></pre><h3 id="间接寻址与基址寻址"><a href="#间接寻址与基址寻址" class="headerlink" title="间接寻址与基址寻址"></a>间接寻址与基址寻址</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- la命令 <strong>la register_destination, RAM_address</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将数据(变量)的地址加载到寄存器中</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面通过例子来说明如何间接寻址和基址寻址</p>
+<pre><code>e.g.
+
+.data
+    array1:  .space  12   # 声明12字节长的空间用来存储三个整数
+.text
+    la $t0, array1        # 将array的首地址加载到寄存器$t0中
+    li $t1, 5             # 将立即数5加载到寄存器$t1中
+    sw $t1, ($t0)         # 将寄存器$t1中的值存储到寄存器$t0存储的地址所代表的内存位置里(即array1[0] = $t1）
+    li $t1, 13            # 将立即数13加载到寄存器$t1中
+    sw $t1, 4($t0)        # array[1] = $t1, 一个整数占四个字节，所以向后偏移四个字节
+    li $t1, -7            # $t1 = -7
+    sw $t1, 8($t0)        # array[2] = $t1,同上
+</code></pre><h3 id="算术指令"><a href="#算术指令" class="headerlink" title="算术指令"></a>算术指令</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;算术命令可以在<a href="http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html" target="_blank" rel="noopener">MIPS Instruction Refence</a>中找到更具体的介绍，这里先介绍几个基本的指令</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 算术指令大多有三个操作数<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 所有的操作数都必须是寄存器，不能简介寻址或者来自内存的变量</p>
+<pre><code>add    $t0,$t1,$t2    #  $t0 = $t1 + $t2  加法指令
+
+sub    $t2,$t3,$t4    #  $t2 = $t3 - $t4  减法指令
+
+addi    $t2,$t3, 5    #  $t2 = $t3 + 5;   立即数加法 ps.不存在立即数减法
+
+addu    $t1,$t6,$t7    #  $t1 = $t6 + $t7;   无符号数加法
+
+subu    $t1,$t6,$t7    #  $t1 = $t6 - $t7;   无符号数减法
+
+mult    $t3,$t4       # 将两个32位数相乘得到一个64位数，加载在lo和Hi寄存器中
+
+                      # 高位在Hi寄存器中，加载在Lo寄存器中
+
+div    $t5,$t6      #  $t5 / $t6, 将商加载在Hi寄存器中，将余数加载在Lo寄存器中
+
+mfhi    $t0        #  $t0 = Hi 将专用寄存器Hi中的值加载到通用寄存器$t0中
+
+mflo    $t1        #  $t1 = Lo 将专用寄存器Lo中的值加载到通用寄存器$t1中
+
+sll     $t0.$t1.value        #  $t0 = $t1 &lt;&lt; value  左移value的位运算
+
+srl     $t2.$t3.value        #  $t2 = $t3 &gt;&gt; value  右移value的位运算
+</code></pre><h3 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h3><h4 id="分支命令"><a href="#分支命令" class="headerlink" title="分支命令"></a>分支命令</h4><pre><code>beq    $t0,$t1,target    #  如果 $t0 = $t1 跳转到一个标签
+blt    $t0,$t1,target    #  如果 $t0 &lt; $t1 跳转到一个标签
+ble    $t0,$t1,target    #  如果 $t0 &lt;= $t1 跳转到一个标签
+bgt    $t0,$t1,target    #  如果 $t0 &gt; $t1 跳转到一个标签
+bge    $t0,$t1,target    #  如果 $t0 &gt;= $t1 跳转到一个标签
+bne    $t0,$t1,target    #  如果 $t0 &lt;&gt; $t1 跳转到一个标签
+
+e.g. dead-loop hello world
+
+.text
+main:
+    la $a0 str   # 将str的地址加载到$a0寄存器中
+    li $v0 4     # 将$v0寄存器加载4号指令，4号指令的参数为$a0中的值
+    syscall       # 执行$v0中的指令
+    beq $v0 $v0 main   #跳回main标签重新进行，程序陷入死循环，不断输出hello world.
+.data
+    str: .asciiz &quot;hello world\n&quot;
+</code></pre><h5 id="跳转命令"><a href="#跳转命令" class="headerlink" title="跳转命令"></a>跳转命令</h5><pre><code>j     target  # 无条件直接跳转到一个标签
+jr    $t3     # 跳转到$t3存储的地址
+</code></pre><h5 id="字程序调用-类似函数"><a href="#字程序调用-类似函数" class="headerlink" title="字程序调用(类似函数)"></a>字程序调用(类似函数)</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- jal指令 <strong>jal label</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 跳转到label，并且将下一条指令的地址加载到$ra寄存器中</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- jr指令  <strong>jr $ra</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 通常如此使用，跳到$ra寄存器储存的地址的指令</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  这里值得注意的是，此处的方法不可以在字程序(类似函数)中再调用新的字程序</p>
+<h4 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 用来执行输入输出操作和退出程序等操作<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用<strong>syscall</strong>执行系统调用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用前要先在寄存器$v0,$a0,$a1中加载合适的值<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 系统调用的返回值加载在$v0寄存器中</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">服务</th>
+<th style="text-align:center">$v0中的数字</th>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">输出整数</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">$a0加载要输出的整数</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">输出浮点数</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">$f12加载要输出的浮点数</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">输出双精度数</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">$f12加载要输出的浮点数</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">输出字符串</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">$a0加载要输出的串的首地址</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">读取整数</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">整数返回$v0</td>
+</tr>
+<tr>
+<td style="text-align:center">读取浮点数</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">浮点数返回$v0</td>
+</tr>
+<tr>
+<td style="text-align:center">读取双精度数</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">双精度数返回$v0</td>
+</tr>
+<tr>
+<td style="text-align:center">读取字符串</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">$a0加载读取字符串的首地址<br>$a1加载字符串长度</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">申请内存空间</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">$a0加载要申请的内存大小</td>
+<td style="text-align:center">返回的地址加载到$v0</td>
+</tr>
+<tr>
+<td style="text-align:center">退出</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Shuhong Huang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Shuhong Huang</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.0.2</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.2"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.2"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
