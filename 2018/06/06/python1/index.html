@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="Timbrer">
 <meta property="og:description" content="Python语言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。 动态类型&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-06-06T10:40:01.901Z">
+<meta property="og:updated_time" content="2018-06-06T10:40:47.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习手册(上)">
 <meta name="twitter:description" content="Python语言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。 动态类型&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
@@ -214,13 +214,13 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
         </li>
       
 
@@ -291,7 +291,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-06T12:22:45+08:00">2018-06-06</time>
             
@@ -331,7 +331,7 @@
 
       
         <h2 id="Python语言"><a href="#Python语言" class="headerlink" title="Python语言"></a><font color="#3399CC">Python语言</font></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。</p>
-<h3 id="动态类型"><a href="#动态类型" class="headerlink" title="动态类型"></a><font color="#F4A460">动态类型</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python的变量是不带类型的，而类型属于对象，将一个对象赋值给一个变量的时候实际上建立了一种引用的关系，以后操作这个变量就代表操作赋值给它的对象<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果把一个变量赋值给一个新的变量，那么这两个变量名将指向同一个对象，相当于共享引用。而将一个变量通过操作符或函数产生的对象赋值给一个新的变量，变量将指向这个新创造的对象，而不是指向同一个对象(<strong>isnot</strong>)，即使它们相等(<strong>==</strong>)。这样子可以实现拷贝(<strong>[:]、copy()</strong>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当一个变量指向新的对象时，原来的对象将被回收</p>
+<h3 id="动态类型"><a href="#动态类型" class="headerlink" title="动态类型"></a><font color="#F4A460">动态类型</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python的变量是不带类型的，而类型属于对象，将一个对象赋值给一个变量的时候实际上建立了一种引用的关系，以后操作这个变量就代表操作赋值给它的对象<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果把一个变量赋值给一个新的变量，那么这两个变量名将指向同一个对象，相当于共享引用。而将一个变量通过操作符或函数产生的对象赋值给一个新的变量，变量将指向这个新创造的对象，而不是指向同一个对象(<strong>is not</strong>)，即使它们相等(<strong>==</strong>)。这样子可以实现拷贝(<strong>[:]、copy()</strong>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当一个变量指向新的对象时，原来的对象将被回收</p>
 <h3 id="迭代协议"><a href="#迭代协议" class="headerlink" title="迭代协议"></a><font color="#F4A460">迭代协议</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迭代协议是指有<strong><strong>next</strong></strong>方法的对象会前进到下一结果，到末尾时引发StopIteration。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>iter()</strong>可以为可迭代对象生成一个迭代器，通过<strong>next()</strong>方法迭代<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可迭代对象都可以在for中使用，<strong>os.popen()</strong>的结果也可以迭代<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列表解析表达式可以嵌套循环<strong>[x+y for x in str1 for y in str2]</strong>表示y在内层循环<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许多内置函数都支持可迭代协议，比如<strong>sum</strong>、<strong>any</strong>、<strong>all</strong>、<strong>min</strong>、<strong>max</strong>和生成可迭代对象的<strong>map</strong>、<strong>filter</strong>、<strong>enumerate</strong>、<strong>zip</strong>等<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>map</strong>、<strong>filter</strong>、<strong>enumerate</strong>、<strong>zip</strong>是自己的迭代器，在迭代一次之后就用尽了，<strong>list()</strong>方法也会用尽这些迭代器，它们不可以保存多个位置不同的迭代器，而<strong>range()</strong>不是这样的。</p>
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><font color="#3399CC">数据类型</font></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据类型的转化直接使用<strong>type(obj)</strong></p>
 <h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a><font color="#F4A460">数字</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>+-*/**</strong>代表基本运算，数的精度自动扩充，不等号可以连用，如果第一个是false后面的不会看<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>abs()</strong>,<strong>min()</strong>,<strong>max()</strong>,<strong>pow()</strong>提供了一些操作，<strong>math</strong>模块提供更丰富的操作<strong>math.pi</strong>,<strong>math.sin</strong>等，<strong>numpy</strong>和<strong>scipy</strong>库提供了科学计算相关方法<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>random</strong>模块产生随机数<strong>random.random()</strong>,<strong>random.choice(list)</strong>等，此外还包括复数(a+bj)，固定精度数(小数)，有理数，分数，布尔值，矩阵，向量等对象<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三元操作符是<strong>x if y else z</strong>，<strong>or</strong>、<strong>and</strong>、<strong>not</strong>是逻辑或和非，<strong>in</strong>代表属于，<strong>/</strong>返回是真除法，<strong>//</strong>是截断除法，向下取整，<strong>math.trunc(a/b)</strong>才是和C++一样的整数除法<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;进制转换<strong>oct()</strong>,<strong>hex()</strong>,<strong>bin()</strong>,<strong>ord()</strong>，还可以使用<strong>int(str,进制)</strong>实现任意进制的转化</p>
@@ -431,10 +431,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -455,7 +455,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -528,7 +528,7 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
