@@ -103,20 +103,24 @@
   <meta name="keywords" content="Hexo, NexT" />
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Timbrer">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Python语言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。 动态类型&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python学习手册(上)">
+<meta property="og:url" content="http://yoursite.com/2018/06/06/python1/index.html">
 <meta property="og:site_name" content="Timbrer">
+<meta property="og:description" content="Python语言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。 动态类型&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-06-06T05:04:15.683Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Timbrer">
+<meta name="twitter:title" content="python学习手册(上)">
+<meta name="twitter:description" content="Python语言&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。 动态类型&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/06/python1/"/>
 
 
 
@@ -125,7 +129,7 @@
     sidebar: "",
   };
 </script>
-  <title>Timbrer</title>
+  <title>python学习手册(上) | Timbrer</title>
   
 
 
@@ -172,8 +176,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/06/python1/" itemprop="url">python学习手册(上)</a></h1>
+          <h1 class="post-title" itemprop="name headline">python学习手册(上)</h1>
         
 
         <div class="post-meta">
@@ -329,9 +330,7 @@
       
 
       
-        
-          
-            <h2 id="Python语言"><a href="#Python语言" class="headerlink" title="Python语言"></a><font color="#00BFFF">Python语言</font></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。</p>
+        <h2 id="Python语言"><a href="#Python语言" class="headerlink" title="Python语言"></a><font color="#00BFFF">Python语言</font></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python是一种强类型动态语言，强类型语言运行时不会出现未定义行为，不允许错误（缓冲区溢出等或者类型不同）。而弱类型语言会允许一些错误的发生而保持程序继续运行（容忍隐式的类型转换等）。动态类型与静态类型是指这些错误在编译时被指出还是在运行时被指出。</p>
 <h3 id="动态类型"><a href="#动态类型" class="headerlink" title="动态类型"></a><font color="#F4A460">动态类型</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python的变量是不带类型的，而类型属于对象，讲一个对象赋值给一个变量的时候实际上建立了一种引用的关系，以后操作这个这个变量就代表操作赋给它的对象<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如果把一个变量赋值给一个新的变量，那么这两个变量名将指向同一个对象，相当于共享引用。而将一个变量通过操作符或函数产生的对象赋值给一个新的变量，变量将指向这个新创造的对象，而不是指向同一个对象(<strong>isnot</strong>)，即使它们相等(<strong>==</strong>)。这样子可以实现拷贝(<strong>[:]、copy()</strong>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当一个变量指向新的对象时，原来的对象将被回收</p>
 <h3 id="迭代协议"><a href="#迭代协议" class="headerlink" title="迭代协议"></a><font color="#F4A460">迭代协议</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迭代协议是指有<strong><strong>next</strong></strong>方法的对象会前进到下一结果，到末尾时引发StopIteration。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>iter()</strong>可以将可迭代对象生成一个迭代器，通过<strong>next()</strong>方法迭代<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可迭代对象都可以在for中使用，<strong>os.popen()</strong>的结果也可以迭代<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列表解析表达式可以嵌套循环[<strong>x+y for x in str1 for y in str2</strong>]表示y在内层循环<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;许多内置函数都支持可迭代协议，比如<strong>sum</strong>、<strong>any</strong>、<strong>all</strong>、<strong>min</strong>、<strong>max</strong>和生成可迭代对象的<strong>map</strong>、<strong>filter</strong>、<strong>enumerate</strong>、<strong>zip</strong>等<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>map</strong>、<strong>filter</strong>、<strong>enumerate</strong>、<strong>zip</strong>是自己的迭代器，在迭代一次之后就用尽了，<strong>list()</strong>方法也会用尽这些迭代器，它们不可以保存多个位置不同的迭代器，而<strong>range()</strong>不是这样的。</p>
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a><font color="#00BFFF">数据类型</font></h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据类型的转化直接使用<strong>type(obj)</strong></p>
@@ -350,8 +349,6 @@
 <h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a><font color="#F4A460">参数</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参数的传递是通过自动将对象赋值给本地变量实现的，不可变参数(整数、字符串等)通过“值”进行传递，可变对象(列表、字典)通过“指针”进行传递<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;函数的参数匹配有多种方式，可以通过位置，或者关键字<strong>func(name=value)</strong>，也可以输入一个列表<strong>func(*seq)</strong>或者字典<strong>(</strong>dict)<strong>，将被自动解析为单个的参数。函数声明时也有多种方法，可以使用</strong>def func(name=value)<strong>设置默认值，可以</strong>func(<em>name)\func(<em>*name)</em></em>自动收集所有参数，并保存为元祖\字典</p>
 <h3 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a><font color="#F4A460">高级用法</font></h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;函数作为一个对象，有许多内置的属性，同样的也可以添加任意的用户定义的属性。在python3中函数可以添加注解，<strong>def func(a:’str’,..)→int:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>lambda</strong>表达式<strong>(lambdaarg1=value,arg2,…argN:expression)</strong>。lambda的主题是一个单一的表达式，而不是代码块。可以把lambda赋值当成函数来用，它只能是实现有限的逻辑，不允许嵌套。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;map函数<strong>map(func,list)</strong>。用来对可迭代对象分别进行操作，然后集合在一起，可以通过tuple或者list获取结果。filter与其类似。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reduce函数<strong>readuce(func,list)</strong>。对list中的元素迭代的调用func函数，前一个函数的返回结果会成为下一次调用的参数。</p>
 
-          
-        
       
     </div>
     
@@ -368,302 +365,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/11/mips/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shuhong Huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Timbrer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/11/mips/" itemprop="url">MIPS快速指南</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-11T23:22:45+08:00">2017-10-11</time>
+              <a href="/2017/10/11/mips/" rel="next" title="MIPS快速指南">
+                <i class="fa fa-chevron-left"></i> MIPS快速指南
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要总结自<a href="http://logos.cs.uic.edu/366/notes/MIPS%20Quick%20Tutorial.htm" target="_blank" rel="noopener">MPIS Quick Turotial</a>，本文内容会随着学习的深入补充。</p>
-<h3 id="数据类型与表示"><a href="#数据类型与表示" class="headerlink" title="数据类型与表示"></a>数据类型与表示</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- MIPS指令都为32位<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 一个字节(byte)8位，半字(halfword)16位，字(word)32位<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 字符类型需要一个字节，整数类型需要四个字节<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 字符用单引号括起，字符串用双引号括起</p>
-<h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 共有32个通用寄存器<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 指令里使用寄存器要在前面加$<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用寄存器可以用编号也可以用名字 e.g. $0, $t1<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 专用寄存器lo和hi不能直接寻址，只有特殊的指令可以访问<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 栈是从高地址到低地址<br>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通用寄存器具体内容和命名这里不再赘述，最基本的寄存器有$v0寄存器用来存储输入输出等指令，$a0-$a3寄存器多用做$v0所存操作的参数，$s0-$s7寄存器用来存值(类似全局变量)，$t0-$t9用来存临时值(类似局部变量)。</p>
-<h3 id="程序结构"><a href="#程序结构" class="headerlink" title="程序结构"></a>程序结构</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 程序是以.asm或.s结尾的文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 数据段以.data独占一行开始，第二行开始声明变量<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 数据段中声明的变量都存储在内存里<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 代码段以.text独占一行开始<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 代码段中可以有多个标签(类似c中的函数头)，程序从标签<strong>mian:</strong>开始执行<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 程序在main中执行exit的syscall后结束<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>#</strong>是注释符号，类似c中的<strong>//</strong>，没有多行引用</p>
-<pre><code>e.g. hello world
-
-.text
-main:
-    la $a0 str   # 将str的地址加载到$a0寄存器中
-    li $v0 4     # 将$v0寄存器加载4号指令，4号指令的参数为$a0中的值
-    syscall       # 执行$v0中的指令
-
-    li $v0 10     # 将$v0寄存器加载10号指令
-    syscall       # 执行$v0中的指令
-.data
-    str: .asciiz &quot;hello world\n&quot;
-</code></pre><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面我们开始讲解基本的指令</p>
-<h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 变量声明的格式为:  <strong>name:    storage_type    value</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 声明的存储类型有.word .byte .space，分别是字，字节和连续空间(类似数组)</p>
-<pre><code>e.g.
-
-var1:       .word   3         # 一个值为3的整数变量
-array1:     .byte   &apos;a&apos;,&apos;b&apos;   # 一个含有两个字符的数组
-array2:     .space  40        # 一个40字节长的空白区域，可以当作长度为40的字符数组也可以当作长度为10的整数数组
-</code></pre><h3 id="加载存储指令"><a href="#加载存储指令" class="headerlink" title="加载存储指令"></a>加载存储指令</h3><h4 id="load："><a href="#load：" class="headerlink" title="load："></a>load：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lw(lb)指令  <strong>lw(lb) register_destination, RAM_source</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将内存中的数据加载到寄存器中，lw(load word)拷贝四个字节，lb(load byte)拷贝一个字节</p>
-<h4 id="store："><a href="#store：" class="headerlink" title="store："></a>store：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sw(sb)指令  <strong>sw(sb) register_source, RAM_destination</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将寄存器中的数据存储到内存中，sw(store word)存储四个字节，lb(store byte)存储一个字节</p>
-<h4 id="load-immediate："><a href="#load-immediate：" class="headerlink" title="load immediate："></a>load immediate：</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- li指令  <strong>li register_destination, value</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将立即数value存储到寄存器中</p>
-<pre><code>e.g.
-
-.data
-    var1: .word 1
-    char1: .byte &apos;a&apos;
-.text
-    lw $t0, var1   # 将整数var1加载到$t0寄存器
-    lb $t1, char1  # 将字符char1加载到$t1寄存器
-    li $t2, 5      # 将5存储到寄存器$t2中
-    sw $t2, var1   # 将$t2寄存器中的值赋给var1
-</code></pre><h3 id="间接寻址与基址寻址"><a href="#间接寻址与基址寻址" class="headerlink" title="间接寻址与基址寻址"></a>间接寻址与基址寻址</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- la命令 <strong>la register_destination, RAM_address</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 将数据(变量)的地址加载到寄存器中</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面通过例子来说明如何间接寻址和基址寻址</p>
-<pre><code>e.g.
-
-.data
-    array1:  .space  12   # 声明12字节长的空间用来存储三个整数
-.text
-    la $t0, array1        # 将array的首地址加载到寄存器$t0中
-    li $t1, 5             # 将立即数5加载到寄存器$t1中
-    sw $t1, ($t0)         # 将寄存器$t1中的值存储到寄存器$t0存储的地址所代表的内存位置里(即array1[0] = $t1）
-    li $t1, 13            # 将立即数13加载到寄存器$t1中
-    sw $t1, 4($t0)        # array[1] = $t1, 一个整数占四个字节，所以向后偏移四个字节
-    li $t1, -7            # $t1 = -7
-    sw $t1, 8($t0)        # array[2] = $t1,同上
-</code></pre><h3 id="算术指令"><a href="#算术指令" class="headerlink" title="算术指令"></a>算术指令</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;算术命令可以在<a href="http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html" target="_blank" rel="noopener">MIPS Instruction Refence</a>中找到更具体的介绍，这里先介绍几个基本的指令</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 算术指令大多有三个操作数<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 所有的操作数都必须是寄存器，不能简介寻址或者来自内存的变量</p>
-<pre><code>add    $t0,$t1,$t2    #  $t0 = $t1 + $t2  加法指令
-
-sub    $t2,$t3,$t4    #  $t2 = $t3 - $t4  减法指令
-
-addi    $t2,$t3, 5    #  $t2 = $t3 + 5;   立即数加法 ps.不存在立即数减法
-
-addu    $t1,$t6,$t7    #  $t1 = $t6 + $t7;   无符号数加法
-
-subu    $t1,$t6,$t7    #  $t1 = $t6 - $t7;   无符号数减法
-
-mult    $t3,$t4       # 将两个32位数相乘得到一个64位数，加载在lo和Hi寄存器中
-
-                      # 高位在Hi寄存器中，加载在Lo寄存器中
-
-div    $t5,$t6      #  $t5 / $t6, 将商加载在Hi寄存器中，将余数加载在Lo寄存器中
-
-mfhi    $t0        #  $t0 = Hi 将专用寄存器Hi中的值加载到通用寄存器$t0中
-
-mflo    $t1        #  $t1 = Lo 将专用寄存器Lo中的值加载到通用寄存器$t1中
-
-sll     $t0.$t1.value        #  $t0 = $t1 &lt;&lt; value  左移value的位运算
-
-srl     $t2.$t3.value        #  $t2 = $t3 &gt;&gt; value  右移value的位运算
-</code></pre><h3 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h3><h4 id="分支命令"><a href="#分支命令" class="headerlink" title="分支命令"></a>分支命令</h4><pre><code>beq    $t0,$t1,target    #  如果 $t0 = $t1 跳转到一个标签
-blt    $t0,$t1,target    #  如果 $t0 &lt; $t1 跳转到一个标签
-ble    $t0,$t1,target    #  如果 $t0 &lt;= $t1 跳转到一个标签
-bgt    $t0,$t1,target    #  如果 $t0 &gt; $t1 跳转到一个标签
-bge    $t0,$t1,target    #  如果 $t0 &gt;= $t1 跳转到一个标签
-bne    $t0,$t1,target    #  如果 $t0 &lt;&gt; $t1 跳转到一个标签
-
-e.g. dead-loop hello world
-
-.text
-main:
-    la $a0 str   # 将str的地址加载到$a0寄存器中
-    li $v0 4     # 将$v0寄存器加载4号指令，4号指令的参数为$a0中的值
-    syscall       # 执行$v0中的指令
-    beq $v0 $v0 main   #跳回main标签重新进行，程序陷入死循环，不断输出hello world.
-.data
-    str: .asciiz &quot;hello world\n&quot;
-</code></pre><h5 id="跳转命令"><a href="#跳转命令" class="headerlink" title="跳转命令"></a>跳转命令</h5><pre><code>j     target  # 无条件直接跳转到一个标签
-jr    $t3     # 跳转到$t3存储的地址
-</code></pre><h5 id="字程序调用-类似函数"><a href="#字程序调用-类似函数" class="headerlink" title="字程序调用(类似函数)"></a>字程序调用(类似函数)</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- jal指令 <strong>jal label</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 跳转到label，并且将下一条指令的地址加载到$ra寄存器中</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- jr指令  <strong>jr $ra</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 通常如此使用，跳到$ra寄存器储存的地址的指令</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  这里值得注意的是，此处的方法不可以在字程序(类似函数)中再调用新的字程序</p>
-<h4 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 用来执行输入输出操作和退出程序等操作<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用<strong>syscall</strong>执行系统调用<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 使用前要先在寄存器$v0,$a0,$a1中加载合适的值<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 系统调用的返回值加载在$v0寄存器中</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">服务</th>
-<th style="text-align:center">$v0中的数字</th>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">结果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">输出整数</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">$a0加载要输出的整数</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">输出浮点数</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">$f12加载要输出的浮点数</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">输出双精度数</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">$f12加载要输出的浮点数</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">输出字符串</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">$a0加载要输出的串的首地址</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">读取整数</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">整数返回$v0</td>
-</tr>
-<tr>
-<td style="text-align:center">读取浮点数</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">浮点数返回$v0</td>
-</tr>
-<tr>
-<td style="text-align:center">读取双精度数</td>
-<td style="text-align:center">7</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">双精度数返回$v0</td>
-</tr>
-<tr>
-<td style="text-align:center">读取字符串</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">$a0加载读取字符串的首地址<br>$a1加载字符串长度</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">申请内存空间</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">$a0加载要申请的内存大小</td>
-<td style="text-align:center">返回的地址加载到$v0</td>
-</tr>
-<tr>
-<td style="text-align:center">退出</td>
-<td style="text-align:center">10</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -673,14 +396,19 @@ jr    $t3     # 跳转到$t3存储的地址
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -701,8 +429,17 @@ jr    $t3     # 跳转到$t3存储的地址
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -747,6 +484,22 @@ jr    $t3     # 跳转到$t3存储的地址
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python语言"><span class="nav-number">1.</span> <span class="nav-text">Python语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#动态类型"><span class="nav-number">1.1.</span> <span class="nav-text">动态类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代协议"><span class="nav-number">1.2.</span> <span class="nav-text">迭代协议</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型"><span class="nav-number">2.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数字"><span class="nav-number">2.1.</span> <span class="nav-text">数字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">2.2.</span> <span class="nav-text">集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#序列（包含字符串，列表，元组）"><span class="nav-number">2.3.</span> <span class="nav-text">序列（包含字符串，列表，元组）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串’’"><span class="nav-number">2.4.</span> <span class="nav-text">字符串’’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">2.5.</span> <span class="nav-text">列表[]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字典-key-value"><span class="nav-number">2.6.</span> <span class="nav-text">字典{key:value}</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元祖（）"><span class="nav-number">2.7.</span> <span class="nav-text">元祖（）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件（）"><span class="nav-number">2.8.</span> <span class="nav-text">文件（）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python语法"><span class="nav-number">3.</span> <span class="nav-text">python语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#赋值-IO"><span class="nav-number">3.1.</span> <span class="nav-text">赋值/IO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支-循环"><span class="nav-number">3.2.</span> <span class="nav-text">分支/循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python函数"><span class="nav-number">4.</span> <span class="nav-text">python函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#作用域"><span class="nav-number">4.1.</span> <span class="nav-text">作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数"><span class="nav-number">4.2.</span> <span class="nav-text">参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高级用法"><span class="nav-number">4.3.</span> <span class="nav-text">高级用法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -873,6 +626,10 @@ jr    $t3     # 跳转到$t3存储的地址
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.2"></script>
+
+
 
   
 
